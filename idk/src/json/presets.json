@@ -1,0 +1,135 @@
+{
+  "pizzas": [
+    {
+      "name": "Margherita",
+      "price": 60,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Oksek\u00F8d"
+        ]
+      ]
+    },
+    {
+      "name": "Vesuvio",
+      "price": 65,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Skinke"
+        ]
+      ]
+    },
+    {
+      "name": "Capricciosa",
+      "price": 49,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Skinke",
+          "champingions"
+        ]
+      ]
+    },
+    {
+      "name": "Bologna",
+      "price": 110,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Oksek\u00F8d"
+        ]
+      ]
+    },
+    {
+      "name": "Hot Bologna",
+      "price": 77,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Oksek\u00F8d",
+          "Chili"
+        ]
+      ]
+    },
+    {
+      "name": "Vegansk Shock",
+      "price": 69,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Salat"
+        ]
+      ]
+    },
+    {
+      "name": "Admiral",
+      "price": 98,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Rejer",
+          "Skinke"
+        ]
+      ]
+    },
+    {
+      "name": "Tonna",
+      "price": 86,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Tun",
+          "l\u00F8g"
+        ]
+      ]
+    },
+    {
+      "name": "Verona",
+      "price": 74,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Bacon",
+          "l\u00F8g"
+        ]
+      ]
+    },
+    {
+      "name": "Salami",
+      "price": 71,
+      "ingredients": [
+        [
+          "Tomat",
+          "Ost",
+          "Salami"
+        ]
+      ]
+    },
+    {
+      "name": "new3",
+      "price": 98,
+      "ingredients": [
+        [
+          "Tomat",
+          "Oksek\u00F8d",
+          "Tun",
+          "L\u00F8g",
+          "Salat",
+          "Rejer",
+          "Chili",
+          "Salami"
+        ]
+      ]
+    }
+  ]
+}

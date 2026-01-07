@@ -1,0 +1,107 @@
+﻿{
+	"pizzas": [
+		{
+			"name": "Margherita",
+			"price": 60,
+			"ingredients": [
+				"Tomat",
+				"Ost"
+			]
+		},
+
+		{
+			"name": "Vesuvio",
+			"price": 65,
+			"ingredients": [
+				"Tomat",
+				"Ost",
+				"Skinke"
+			]
+		},
+
+		{
+			"name": "Capricciosa",
+			"price": 49,
+			"ingredients": [
+				"Tomat",
+				"Ost",
+				"Skinke",
+				"champingions"
+			]
+		},
+
+		{
+			"name": "Bologna",
+			"price": 110,
+			"ingredients": [
+				"Tomat",
+				"Ost",
+				"Oksekød"
+			]
+		},
+
+		{
+			"name": "Hot Bologna",
+			"price": 77,
+			"ingredients": [
+				"Tomat",
+				"Ost",
+				"Oksekød",
+				"Chili"
+			]
+		},
+
+		{
+			"name": "Vegansk Shock",
+			"price": 69,
+			"ingredients": [
+				"Tomat",
+				"Ost",
+				"Salat"
+			]
+		},
+
+		{
+			"name": "Admiral",
+			"price": 98,
+			"ingredients": [
+				"Tomat",
+				"Ost",
+				"Rejer",
+				"Skinke"
+			]
+		},
+
+		{
+			"name": "Tonna",
+			"price": 86,
+			"ingredients": [
+				"Tomat",
+				"Ost",
+				"Tun",
+				"løg"
+			]
+		},
+
+		{
+			"name": "Verona",
+			"price": 74,
+			"ingredients": [
+				"Tomat",
+				"Ost",
+				"Bacon",
+				"løg"
+			]
+		},
+
+		{
+			"name": "Salami",
+			"price": 71,
+			"ingredients": [
+				"Tomat",
+				"Ost",
+				"Salami"
+			]
+		}
+	]
+}

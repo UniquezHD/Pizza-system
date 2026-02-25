@@ -54,28 +54,28 @@ namespace idk
             {
                 if (Properties.Settings.Default.JsonPath != null)
                 {
-        using (StreamReader r = new StreamReader(Properties.Settings.Default.JsonPath))
-        {
-            string json = r.ReadToEnd();
-
-            var jsonObject = JsonDocument.Parse(json);
-
-            pizzas = jsonObject.RootElement.GetProperty("pizzas");
-
-            if (!util.IsJsonValid(pizzas))
-            {
-                return;
+                    using (StreamReader r = new StreamReader(Properties.Settings.Default.JsonPath))
+                    {
+                        string json = r.ReadToEnd();
+            
+                        var jsonObject = JsonDocument.Parse(json);
+            
+                        pizzas = jsonObject.RootElement.GetProperty("pizzas");
+            
+                        if (!util.IsJsonValid(pizzas))
+                        {
+                            return;
+                        }
+            
+                        for (int i = 0; i < pizzas.GetArrayLength(); i++)
+                        {
+                            comboBox1.Items.Add($"{pizzas[i].GetProperty("name")} {pizzas[i].GetProperty("price")}Kr");
+                        }
+                    }
+                }
+            } catch {
+                MessageBox.Show("Link Json data in settings");
             }
-
-            for (int i = 0; i < pizzas.GetArrayLength(); i++)
-            {
-                comboBox1.Items.Add($"{pizzas[i].GetProperty("name")} {pizzas[i].GetProperty("price")}Kr");
-            }
-        }
-    }
-} catch {
-    MessageBox.Show("Link Json data in settings");
-}
             
         }
 
@@ -271,3 +271,4 @@ namespace idk
         }
     }
 }
+

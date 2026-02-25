@@ -1,4 +1,4 @@
-﻿using idk.src;
+using idk.src;
 using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -50,27 +50,33 @@ namespace idk
 
             this.TopMost = true;
 
-            if(Properties.Settings.Default.JsonPath != null)
+            try
             {
-                using(StreamReader r = new StreamReader(Properties.Settings.Default.JsonPath))
+                if (Properties.Settings.Default.JsonPath != null)
                 {
-                    string json = r.ReadToEnd();
+        using (StreamReader r = new StreamReader(Properties.Settings.Default.JsonPath))
+        {
+            string json = r.ReadToEnd();
 
-                    var jsonObject = JsonDocument.Parse(json);
+            var jsonObject = JsonDocument.Parse(json);
 
-                    pizzas = jsonObject.RootElement.GetProperty("pizzas");
+            pizzas = jsonObject.RootElement.GetProperty("pizzas");
 
-                    if(!util.IsJsonValid(pizzas))
-                    {
-                        return;
-                    }
-
-                    for(int i = 0; i < pizzas.GetArrayLength(); i++)
-                    {
-                        comboBox1.Items.Add($"{pizzas[i].GetProperty("name")} {pizzas[i].GetProperty("price")}Kr");
-                    }
-                }
+            if (!util.IsJsonValid(pizzas))
+            {
+                return;
             }
+
+            for (int i = 0; i < pizzas.GetArrayLength(); i++)
+            {
+                comboBox1.Items.Add($"{pizzas[i].GetProperty("name")} {pizzas[i].GetProperty("price")}Kr");
+            }
+        }
+    }
+} catch {
+    MessageBox.Show("Link Json data in settings");
+}
+            
         }
 
         protected override void WndProc(ref Message m)
